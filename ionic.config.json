@@ -1,5 +1,7 @@
 {
   "name": "voice_order",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

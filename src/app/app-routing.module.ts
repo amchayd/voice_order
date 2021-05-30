@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'chat-order',
     pathMatch: 'full'
+  },
+  {
+    path: 'chat-order',
+    loadChildren: () => import('./chat-order/chat-order.module').then( m => m.ChatOrderPageModule)
   },
 ];
 
