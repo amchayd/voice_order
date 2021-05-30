@@ -1,9 +1,64 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>chat-order</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title><ion-icon name="arrow-back"></ion-icon> Chat bot</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="primary">
+<ion-text>
+  {{botMessage}}
+</ion-text>
+<ion-text>{{tmpStatus}}</ion-text>
+  <div class="mic_div ion-text-center">
+    <ion-icon slot="icon-only" name="{{status}}" justify-content-center align-items-center></ion-icon>
+  </div>
 
+  {{log}}
 </ion-content>
+
+<ion-footer color="primary">
+  <ion-card class="order_card_header ion-align-items-center">
+    <ion-card-content>
+      Your order
+    </ion-card-content>
+    </ion-card>
+  <ion-card class="order_card">
+    <ion-card-header>
+      <ion-card-title>{{categorie?.name}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <img src="https://ehonline.eu/wp-content/uploads/2019/07/prix-de-revient-d-une-pizza.jpg" class="order_img" alt="">
+          </ion-col>
+          <ion-col>
+            <ion-text>
+              <h2>Margarita</h2>
+            </ion-text>
+            <ion-text>
+              <p>Large</p>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button class="confirm_order">
+            Re-order
+          </ion-button>        
+        </ion-col>
+        <ion-col>
+          <ion-button class="confirm_order">
+            Confirm my order
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+</ion-footer>
+

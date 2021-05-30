@@ -1,0 +1,48 @@
+.order_card {
+    background-color: white !important;
+    margin: 0;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 2em;
+}
+ion-footer{
+    background-color: #162343 !important;
+    padding-bottom: 0 !important;
+}
+
+.order_card_header{
+    background-color: #FF2B58;
+    border-radius: 25px;
+    width: 50%;
+    margin: auto !important;
+    color:#fff !important;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 1em;
+    z-index: 10;
+}
+
+.mic_div {
+    height: 7em;
+    width: 7em;
+    border-radius: 7em;
+    background-color: #FF2B58;
+    text-align: center;
+    margin: auto;
+    margin-top: 3em;
+}
+.mic_div ion-icon {
+    font-size: 2em;
+    padding-top: 35%;
+
+}
+
+img.order_img {
+    height: 6em;
+}
+ion-button.confirm_order {
+    width: 100%;
+    margin:0 !important;
+    font-weight: bold;
+}
